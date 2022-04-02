@@ -46,7 +46,7 @@ function App() {
     <div className="App">
       <ReactLoading/>
       
-      <h1 className="main-title">Video</h1>
+      <h1 className="main-title">Best videos</h1>
       {videos?.map((item) => (
       <div className="item" onClick={() => setModal ({
                 ...modal, modal: true
@@ -67,13 +67,13 @@ function App() {
       </div>))}
     
       <Modal
-      isOpened ={modal.modal}
-      onModalClose ={() => setModal({...modal, modal: false})}>
+        isOpened ={modal.modal}
+        onModalClose ={() => setModal({...modal, modal: false})}>
       </Modal>
     
     <ReactPlayer url={play && play.ContentUrl}></ReactPlayer>
     </div>
-  );
+  );   //Video ContentUrl response 404, I added another link in Modal.js to show player works
 }
 
 
