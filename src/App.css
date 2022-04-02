@@ -1,0 +1,82 @@
+.App {
+  text-align: center;
+  background: rgb(32, 30, 30);
+  color: #fff;
+}
+
+p {
+  margin: 0;
+}
+
+.preload {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  min-height: 100vh;
+  background: #ad1239;
+  animation: fade 1.5s ease forwards;
+}
+
+@keyframes fade {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+
+.main-title {
+  margin: 0;
+  padding-bottom: 60px;
+  font-size: 40px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.item__content {
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.item__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ad1239;
+  padding-bottom: 20px;
+}
+
+.item__description {
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 600px;
+}
+
+.modal {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.open {
+  display: block;
+}
+
+.modal.close {
+  display: none;
+}
+
+.logo {
+  margin-top: 300px;
+}
